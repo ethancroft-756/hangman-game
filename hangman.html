@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="main.css" />
+        <title>Hangman Game</title>
+
+        <script src="https://use.fontawesome.com/2efc992e3a.js"></script>
+    </head>
+
+    <body>
+        <h1 class="hangman__heading">Hangman</h1>
+
+        <h2 class="hangman__sub-heading">Simply start typing letters to guess the randomly generated word!</h2>
+
+        <div class="hangman__message-container">
+            <p class="hangman__message"></p>
+        </div>
+
+        <div class="hangman__activities">
+            <div class="hangman__incorrect-letters"></div>
+
+            <svg height="300" width="500" class="hangman__drawing">
+                <circle class="hangman__body-part" cx="250" cy="70" r="30" stroke="white" stroke-width="2" fill="none"></circle>
+
+                <!-- B -->
+                <line class="hangman__body-part" x1="250" x2="250" y1="100" y2="200" style="stroke-width:2"></line>
+
+                <!-- LL -->
+                <line class="hangman__body-part" x1="190" x2="250" y1="250" y2="200" style="stroke-width:2"></line>
+
+                <!-- RL -->
+                <line class="hangman__body-part" x1="310" x2="250" y1="250" y2="200" style="stroke-width:2"></line>
+
+                <!-- LA -->
+                <line class="hangman__body-part" x1="250" x2="190" y1="150" y2="100" style="stroke-width:2"></line>
+
+                <!-- RA -->
+                <line class="hangman__body-part" x1="250" x2="310" y1="150" y2="100" style="stroke-width:2"></line>
+
+                <line class="hangman__hanger-part" x1="100" x2="400" y1="275" y2="275" style="stroke-width:2"></line>
+
+                <line class="hangman__hanger-part" x1="100" x2="100" y1="275" y2="25" style="stroke-width:2"></line>
+
+                <line class="hangman__hanger-part" x1="100" x2="250" y1="25" y2="25" style="stroke-width:2"></line>
+
+                <line class="hangman__hanger-part" x1="250" x2="250" y1="24" y2="39" style="stroke-width:2"></line>
+            </svg>
+        </div>
+
+        <div class="hangman__letters-container">
+        </div>
+
+        <script src="hangman-v2.js"></script>
+    </body>
+</html>
